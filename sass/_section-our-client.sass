@@ -1,0 +1,48 @@
+.our-client
+    min-height: 1549px
+    background: #5A98D0
+    border-radius: 200px 0px 0px 0px
+    &__titles
+        display: flex
+        justify-content: space-between
+        padding-top: 96px
+    &__h2
+        max-width: 30%
+        font-weight: normal
+    &__subtitle
+        max-width: 58%
+        color: #FFFFFF
+        opacity: 0.6
+.logo-client
+    margin-top: 111px
+    &__buttons
+        display: flex
+        flex-wrap: wrap
+        
+    &__button
+        width: 235px
+        height: 128px
+        background: #5A98D0
+        border: 0px
+        font-family: Gilroy
+        font-size: 20px
+        line-height: 46px
+        letter-spacing: 0.02em
+        color: #F2F2F2
+        cursor: pointer
+        transition: 0.5s all
+        &:hover
+            font-size: 16px
+    &__button:nth-child(n+5)
+        border-top: 1px solid white
+    &__button:nth-child(n)
+        border-right: 1px solid white
+    &__button:nth-child(4n)
+        border-right: 0px
+    &__button:nth-child(8n)
+        border-right: 0px
+    &__more-client
+        .logo-client__button
+            border-right: 0px
+            border-top: 1px solid white
+            background: rgba(31, 63, 104, 0.2)
