@@ -116,14 +116,15 @@ function validate() {
                 return response.text();
             })
             .then(res => {
-                modalErr.style.display = 'none';
-                form.style.display = 'none';
-                modalTitle.style.display = 'none';
-                modalSuccess.style.display = "block";
+                //Если всё окей (на гитхабе пост запросы не поддерживаются, не смог норм сделать)
             })
             .catch(res => {
                 //если ошибка, можно валидацию на бэке прикрутить
             });
+            modalErr.style.display = 'none';
+            form.style.display = 'none';
+            modalTitle.style.display = 'none';
+            modalSuccess.style.display = "block";
         }
     });
 
